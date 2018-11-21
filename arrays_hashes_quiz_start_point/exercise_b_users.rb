@@ -55,12 +55,41 @@ users = {
 }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+# p users["Jonathan"][:twitter]
+
 # 2. Get Erik's hometown
+# p users["Erik"][:home_town]
+
 # 3. Get the array of Erik's lottery numbers
+# p users["Erik"][:lottery_numbers]
+
 # 4. Get the type of Avril's pet Monty
+# p users["Avril"][:pets][0].keys[1]
+
 # 5. Get the smallest of Erik's lottery numbers
+# p users["Erik"][:lottery_numbers].sort[0]
+
 # 6. Return an array of Avril's lottery numbers that are even
+# p users["Avril"][:lottery_numbers].select(&:even?)
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+# p users["Erick"][:lottery_numbers].push(7)
+
 # 8. Change Erik's hometown to Edinburgh
+  # users["Erik"][:hometown]="Edinburgh"
+  # p users["Erik"]
+
 # 9. Add a pet dog to Erik called "Fluffy"
+ # users["Erik"][:pets].push({:name => "Fluffy", :species => "dog"})
+ # p users["Erik"]
+
 # 10. Add another person to the users hash
+# NewUser = {
+#     "Davide" =>{
+#     :twitter => "davidgoaty",
+#     :home_town => "Rome",
+#     :pet => "girlfrien"
+#   }
+# }
+#
+# p users.merge(NewUser)
